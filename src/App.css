@@ -1,0 +1,95 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left panel (Questions) */
+.left-panel {
+  width: 40%;
+  background: #f9fafc;
+  padding: 25px;
+  border-right: 3px solid #e0e0e0;
+  box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+.left-panel h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1e3c72;
+}
+
+/* Right panel (Code Editor) */
+.right-panel {
+  width: 60%;
+  background: #ffffff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.right-panel h2 {
+  font-size: 24px;
+  color: #2a5298;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  flex: 1;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  background: #f4f7fc;
+  color: #2a2a2a;
+  border: 2px solid #ccd6f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  resize: none;
+  min-height: 400px;
+}
+
+textarea:focus {
+  border-color: #4c79ff;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(76, 121, 255, 0.2);
+}
+
+/* Scrollbar Styling */
+.left-panel::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 10px;
+}
+
+.left-panel::-webkit-scrollbar-thumb,
+.right-panel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.left-panel::-webkit-scrollbar-track,
+.right-panel::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}

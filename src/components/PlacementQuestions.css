@@ -1,0 +1,81 @@
+.container {
+  padding: 10px 20px;
+}
+
+.container h2 {
+  font-size: 22px;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+/* Each question box */
+.question-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.question-box h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2a2a2a;
+}
+
+/* Horizontal button row */
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+/* Base styles for buttons and links */
+.actions button,
+.actions .watch-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Individual styles */
+.watch-btn {
+  background-color: #0077cc;
+}
+
+.watch-btn:hover {
+  background-color: #005fa3;
+}
+
+.solve-btn {
+  background-color: #28a745;
+}
+
+.solve-btn:hover {
+  background-color: #208638;
+}
+
+.editor-btn {
+  background-color: #6f42c1;
+}
+
+.editor-btn:hover {
+  background-color: #5936a1;
+}
